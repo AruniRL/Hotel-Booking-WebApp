@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss()
   ],
-  base: "/Hotel-Booking-WebApp",
+  base: process.env.VITE_BASE_PATH || "/Hotel-Booking-WebApp",
 })
